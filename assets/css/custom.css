@@ -1,0 +1,144 @@
+body {background-color:#eee;}
+
+/* .border {outline:1px solid red;} */
+.clearfix {clear:both;}
+.titles {text-align:center; background:rgba(0, 0, 0, 0.20); padding:20px 0;}
+.text-small {font-size:75%; font-weight:normal;}
+.container-fluid {width:1424px;}
+
+.header-title {text-align:center; width:200px; float:left; font-weight:bold;}
+.tall-titles {height:112px;}
+
+.sticky {position:sticky; top:200px;}
+code pre {margin-bottom:0;}
+
+/*
+.image {
+    flex: 0 0 auto;
+    width: 100%;
+
+    margin-right: 30px;
+    background: hsl(205, 65%, 24%);
+    position:relative;
+}
+
+.image img {
+    width:100%;
+
+}
+
+.Mask {
+    -webkit-clip-path: polygon(50% 0%, 80% 100%, 0 40%, 100% 40%, 20% 100%);
+    clip-path: polygon(50% 0%, 80% 100%, 0 40%, 100% 40%, 20% 100%);
+}
+.Mask--placeholder {
+    position: absolute;
+    opacity: 0.10;
+}
+.image:hover .Mask--placeholder {
+    opacity: 0;
+}
+.masking {
+    width:500px;
+    height:500px;
+    outline:1px solid red;
+    background-color:rgba(255, 0, 255, 0.20);
+    background:url(../img/raspberries.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+.mask-bg {
+    background-image:url(../svg/spotify.svg);
+}
+.mask2 {
+    mask-image:url(../img/raspberries.jpg);
+}
+.mask3 {
+    clip-path: url(#smile);
+}
+.mask4 {
+    clip-path: url(#letterx);
+}
+*/
+
+.has-mask {width:200px; height:200px; float:left; border:1px solid transparent;}
+.has-mask > div {background-position:center center; /*background-size:cover;*/ background-repeat:no-repeat;}
+.has-mask > * {
+    width:100%;
+    height:100%;
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+}
+.has-mask .mask1 {
+    -webkit-mask-image: url('https://cdn.glitch.com/04eadd2b-7dd4-43fc-af3d-cff948811986%2Fstar-mask.png?v=1597756701076');
+    mask-image: url('https://cdn.glitch.com/04eadd2b-7dd4-43fc-af3d-cff948811986%2Fstar-mask.png?v=1597756701076');
+}
+.has-mask .mask2 {
+    -webkit-mask-image: url('https://cdn.glitch.com/04eadd2b-7dd4-43fc-af3d-cff948811986%2Fstar-mask-gradient.png?v=1597757011489');
+    mask-image: url('https://cdn.glitch.com/04eadd2b-7dd4-43fc-af3d-cff948811986%2Fstar-mask-gradient.png?v=1597757011489');
+}
+.has-mask .mask3 {
+    -webkit-mask-image: url('../svg/x1.svg');
+    mask-image: url('../svg/x1.svg');
+}
+.has-mask .mask4 {
+    -webkit-mask-image: url('../svg/spotify.svg');
+    mask-image: url('../svg/spotify.svg');
+}
+.has-mask .mask5 {
+    -webkit-mask-image: url('../svg/BrandSticker-Tumble.svg');
+    mask-image: url('../svg/BrandSticker-Tumble.svg');
+}
+.has-mask .mask6 {
+    -webkit-mask-image: url('../svg/universecolor.svg');
+    mask-image: url('../svg/universecolor.svg');
+}
+.has-mask .mask-ani-1 {
+    -webkit-mask-image: url('../svg/giphy.webp');
+    mask-image: url('../svg/giphy.webp');
+}
+.has-mask .mask-ani-2 {
+    -webkit-mask-image: url('https://media2.giphy.com/media/IB9foBA4PVkKA/giphy.gif');
+    mask-image: url('https://media2.giphy.com/media/IB9foBA4PVkKA/giphy.gif');
+}
+.has-mask .mask-ani-3 {
+    -webkit-mask-image: url('../svg/wave-square.gif');
+    mask-image: url('../svg/wave-square.gif');
+}
+.has-mask .mask-ani-4 {
+    -webkit-mask-image: url('https://media1.giphy.com/media/hPVKyisRsZAKk/giphy.webp');
+    mask-image: url('https://media1.giphy.com/media/hPVKyisRsZAKk/giphy.webp');
+}
+.has-mask .mask-ani-4 {
+    -webkit-mask-image: url('https://media1.giphy.com/media/hPVKyisRsZAKk/giphy.webp');
+    mask-image: url('https://media1.giphy.com/media/hPVKyisRsZAKk/giphy.webp');
+}
+.has-mask .mask-ani-5 {
+    -webkit-mask-image: url('https://media4.giphy.com/media/mTs11L9uuyGiI/giphy.webp');
+    mask-image: url('https://media4.giphy.com/media/mTs11L9uuyGiI/giphy.webp');
+}
+.has-mask .mask-ani-6 {
+    -webkit-mask-image: url('../svg/marcus.webp');
+    mask-image: url('../svg/marcus.webp');
+}
+.has-mask .mask-ani-7 {
+    -webkit-mask-image: url('../svg/rickroll.gif');
+    mask-image: url('../svg/rickroll.gif');
+}
+.animated2 .has-mask [class*='mask-ani-'] {
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+/* @supports (-moz-appearance:none) {
+    .animated1 {display:none;}
+}
+
+@supports not (-moz-appearance:none) {
+    .animated2 {display:none;}
+} */
