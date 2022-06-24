@@ -2,65 +2,14 @@ body {background-color:#eee;}
 
 /* .border {outline:1px solid red;} */
 .clearfix {clear:both;}
-.titles {text-align:center; background:rgba(0, 0, 0, 0.20); padding:20px 0;}
 .text-small {font-size:75%; font-weight:normal;}
 .container-fluid {width:1424px;}
-
-.header-title {text-align:center; width:200px; float:left; font-weight:bold;}
-.tall-titles {height:112px;}
-
 .sticky {position:sticky; top:200px;}
 code pre {margin-bottom:0;}
 
-/*
-.image {
-    flex: 0 0 auto;
-    width: 100%;
-
-    margin-right: 30px;
-    background: hsl(205, 65%, 24%);
-    position:relative;
-}
-
-.image img {
-    width:100%;
-
-}
-
-.Mask {
-    -webkit-clip-path: polygon(50% 0%, 80% 100%, 0 40%, 100% 40%, 20% 100%);
-    clip-path: polygon(50% 0%, 80% 100%, 0 40%, 100% 40%, 20% 100%);
-}
-.Mask--placeholder {
-    position: absolute;
-    opacity: 0.10;
-}
-.image:hover .Mask--placeholder {
-    opacity: 0;
-}
-.masking {
-    width:500px;
-    height:500px;
-    outline:1px solid red;
-    background-color:rgba(255, 0, 255, 0.20);
-    background:url(../img/raspberries.jpg);
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:cover;
-}
-.mask-bg {
-    background-image:url(../svg/spotify.svg);
-}
-.mask2 {
-    mask-image:url(../img/raspberries.jpg);
-}
-.mask3 {
-    clip-path: url(#smile);
-}
-.mask4 {
-    clip-path: url(#letterx);
-}
-*/
+.titles {text-align:center; background:rgba(0, 0, 0, 0.20); padding:20px 0;}
+.header-title {text-align:center; width:200px; float:left; font-weight:bold;}
+.tall-titles {height:112px;}
 
 .has-mask {width:200px; height:200px; float:left; border:1px solid transparent;}
 .has-mask > div {background-position:center center; /*background-size:cover;*/ background-repeat:no-repeat;}
