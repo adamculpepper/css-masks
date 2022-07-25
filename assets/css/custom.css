@@ -133,6 +133,38 @@ https://media1.giphy.com/media/Qvp6Z2fidQR34IcwQ5/giphy.gif?cid=790b7611b1a6937f
 /* .text-masks video {position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1; width:auto; height:auto; min-width:100%; min-height:100%;} */
 
 
+.text-mask-paragraph {
+	background-image:url('../video/rainbow.webp');
+	background-position:center 25%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	color:red; /* fallback while background is loading or if it never loads background-color can work here too */
+	font-weight:900;
+	font-size:1.6vw;
+	line-height:normal;
+	/* text-align:center; */
+	/* outline:1px dotted red; */
+}
+.text-mask-paragraph h1 {
+	font-size:3vw;
+	font-weight:900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
