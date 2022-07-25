@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 :root {
 	--gray-rgb: 190, 190, 190;
 }
 
-body {background-color:#eee;}
+body {background-color:#eee; font-family:'Montserrat', sans-serif; font-weight:400!important;}
 code pre {margin-bottom:0;}
-img,
-video {width:100%; height:100%;}
+.has-mask img,
+.has-mask video {width:100%; height:100%;}
 
 
 .titles {text-align:center;}
@@ -13,10 +16,8 @@ video {width:100%; height:100%;}
 .luminance {mask-mode:luminance; -webkit-mask-mode:luminance;}
 .text-small {font-size:75%; font-weight:normal;}
 
-
-
 .has-mask * {
-	background-position:center center; /*background-size:cover;*/ background-repeat:no-repeat;
+	background-position:center center; background-size:cover; background-repeat:no-repeat;
 	-webkit-mask-size:100% 100%;
 	mask-size:100% 100%;
 	-webkit-mask-repeat: no-repeat;
@@ -40,6 +41,7 @@ video {width:100%; height:100%;}
 .has-mask .mask-ani-6 { mask-image: url('../img/marcus.webp');		-webkit-mask-image: url('../img/marcus.webp'); }
 .has-mask .mask-ani-7 { mask-image: url('../img/rickroll.gif');		-webkit-mask-image: url('../img/rickroll.gif'); }
 
+
 /*
 .animated2 .has-mask [class*='mask-ani-'] {
 	mask-mode: luminance;
@@ -54,3 +56,191 @@ video {width:100%; height:100%;}
 	.animated2 {display:none;}
 }
 */
+.mt-50 {margin-top: 50vh!important;}
+.mb-50 {margin-bottom: 50vh!important;}
+.pt-50 {padding-top: 50vh!important;}
+.pb-50 {padding-bottom: 50vh!important;}
+.anchor-title {display:block; font-size:10vw; font-weight:900; text-align:center; margin:0 auto;}
+.fw-bold {font-weight:900!important;}
+#secret-link {display:block; width:100%; height:0; position:sticky; top:0; z-index:9999; opacity:0;}
+#secret-link a {position:absolute; top:0; right:0; width:50px; height:50px;}
+
+section {height: 100vh;}
+
+#text-masks section {display:flex; align-items:center; justify-content:center;}
+
+.text-mask-example {font-size:8vw; line-height:6vw;}
+.text-mask-example img {width:35vw;}
+
+.text-mask-example .text-mask {font-size:18vw; line-height:normal;}
+
+#target-result .text-mask {font-size:15vw; line-height:normal;}
+
+#controls {/*background: rgba(var(--gray-rgb), 0.90);*/ text-align:right; position:sticky; bottom:0; pointer-events:none;}
+#controls li {display:block;}
+#controls a {display:inline-block; margin:5px; width:3.5vw; font-size:2vw; line-height:3vw; background:rgba(0, 0, 0, 0.05); color:rgba(0, 0, 0, 0.20); text-align:center; text-decoration:none; outline:1px solid transparent; transition:all 300ms linear; pointer-events:all;}
+#controls a:hover {background:rgba(0, 0, 0, 0.10); outline:1px solid rgba(0, 0, 0, 0.20);}
+
+
+.text-mask {
+	background-image:url('../img/nasa-webb.png');
+	background-position:center 25%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	color:red; /* fallback while background is loading or if it never loads background-color can work here too */
+	font-weight:900;
+	font-size:6vw;
+	line-height:10vw;
+	text-align:center;
+	/* outline:1px dotted red; */
+}
+
+
+
+
+
+
+.text-masks [class*='col-'] {position:relative; padding:0; overflow:hidden; background-position:center center; background-repeat:no-repeat; background-size:100%;}
+.text-masks [class*='col-']:nth-of-type(1) .text-mask {background-image:url('../video/ocean.webp');}
+.text-masks [class*='col-']:nth-of-type(2) .text-mask {background-image:url('../video/rainbow.webp'); outline:10px dotted orange;}
+.text-masks [class*='col-']:nth-of-type(3) .text-mask {background-image:url('https://media0.giphy.com/media/hugQmENCWTyPM3yG5D/200w.webp');}
+.text-masks [class*='col-']:nth-of-type(4) .text-mask {background-image:url('https://i.pinimg.com/originals/b4/e3/71/b4e371619042d1e80918d09904e90f7d.gif');}
+.text-masks [class*='col-']:nth-of-type(5) .text-mask {background-image:url('https://media4.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(6) .text-mask {background-image:url('https://media4.giphy.com/media/iWU4XWUNbsGZzqSNkP/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(7) .text-mask {background-image:url('https://media1.giphy.com/media/3JEkXU9mnvnb2/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(8) .text-mask {background-image:url('https://media4.giphy.com/media/tAs1YUIAAZVOE/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(9) .text-mask {background-image:url('https://media3.giphy.com/media/Y34v7S5jENXAdbkfYh/giphy.webp'); outline:10px dotted purple;}
+
+.text-masks [class*='col-']:nth-of-type(10) .text-mask {background-image:url('https://media4.giphy.com/media/mygX7MHgvMDBtcOd7t/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(11) .text-mask {background-image:url('https://media2.giphy.com/media/l1J3zhizVZdTVGjn2/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(12) .text-mask {background-image:url('https://media4.giphy.com/media/lsljEmwyzUIxy/giphy.webp'); outline:10px dotted blue;}
+.text-masks [class*='col-']:nth-of-type(13) .text-mask {background-image:url('https://media2.giphy.com/media/13b50smGFDhLck/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(14) .text-mask {background-image:url('https://media2.giphy.com/media/A4qGmmLMdqB6U/giphy.webp');}
+.text-masks [class*='col-']:nth-of-type(15) .text-mask {background-image:url('https://media1.giphy.com/media/IPFz7kGsj5tqU/giphy.webp');}
+
+
+/*
+https://media4.giphy.com/media/5Puwg4f1q4Pm9nfE8w/giphy.gif?cid=790b76116c9b0968c1b553b850017914d75fb18f4b577307&rid=giphy.gif&ct=g
+https://media1.giphy.com/media/Qvp6Z2fidQR34IcwQ5/giphy.gif?cid=790b7611b1a6937f5c2ffdc9432626a7ded9cf03864d7e32&rid=giphy.gif&ct=g
+*/
+
+
+.text-mask.japanese {font-family:'Dela Gothic One', cursive; font-size:5vw; line-height:4vw; font-weight:400;}
+
+
+/* .text-masks video {position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1; width:auto; height:auto; min-width:100%; min-height:100%;} */
+
+
+
+
+
+
+.text-masks3 {font-family:'Montserrat';}
+.text-masks3 [class*='col-'] {
+	/* if we can clip, do it */
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+	/* what will show through the text
+	~ or ~
+	what will be the background of that element */
+	background-color:red;
+
+
+	/* fallback text color
+	~ or ~
+	the actual color of text, so it better work on the background */
+	color:red;
+	font-weight:900;
+	font-size:8vw;
+	line-height:300px;
+	text-align:center;
+}
+
+.text-masks3 [class*='col-'] {position:relative; padding:0; overflow:hidden; background-position:center center; background-repeat:no-repeat; background-size:cover;}
+.text-masks3 [class*='col-']:nth-of-type(1) {background-image:url('https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png'); outline:1px dotted red; background-position:center 25%;}
+.text-masks3 [class*='col-']:nth-of-type(2) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(3) {background-image:url('../img/space3.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(4) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(5) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(6) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(7) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(8) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(9) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+.text-masks3 [class*='col-']:nth-of-type(10) {background-image:url('../img/space2.jpg'); outline:1px dotted red;}
+
+
+.text-masks3 .banner {
+	position:relative;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+}
+.text-masks3 video,
+.text-masks3 .text {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.text-masks3 video {width:auto; height:auto; opacity:0.50;}
+.text-masks3 .text {color:red; z-index:99;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-masks2 {font-family:'Montserrat';}
+.text-masks2 [class*='col-'] {
+	/* color:red; */
+	font-size:8vw;
+	line-height:300px;
+	padding:0;
+}
+
+.banner {
+	position:relative;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+}
+
+.text-masks2 video {
+	object-fit:cover;
+}
+
+.text-masks2 video,
+.text-masks2 .text {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.text-masks2 .text {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin:0;
+	font-weight:900;
+	font-size:8vw;
+	text-align:center;
+	background-color:#fff;
+	mix-blend-mode:screen;
+}
