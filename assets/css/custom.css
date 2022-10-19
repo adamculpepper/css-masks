@@ -76,9 +76,9 @@ section {height: 100vh;}
 
 #target-result .text-mask {font-size:15vw; line-height:normal;}
 
-#controls {/*background: rgba(var(--gray-rgb), 0.90);*/ text-align:right; position:sticky; bottom:0; pointer-events:none;}
+#controls {/*background: rgba(var(--gray-rgb), 0.90);*/ text-align:right; position:sticky; bottom:5px; pointer-events:none;}
 #controls li {display:block;}
-#controls a {display:inline-block; margin:5px; width:3.5vw; font-size:2vw; line-height:3vw; background:rgba(0, 0, 0, 0.05); color:rgba(0, 0, 0, 0.20); text-align:center; text-decoration:none; outline:1px solid transparent; transition:all 300ms linear; pointer-events:all;}
+#controls a {display:inline-block; margin:3px; width:3.5vw; font-size:2vw; line-height:3vw; background:rgba(0, 0, 0, 0.05); color:rgba(0, 0, 0, 0.20); text-align:center; text-decoration:none; outline:1px solid transparent; transition:all 300ms linear; pointer-events:all;}
 #controls a:hover {background:rgba(0, 0, 0, 0.10); outline:1px solid rgba(0, 0, 0, 0.20);}
 
 
@@ -91,7 +91,7 @@ section {height: 100vh;}
 	-webkit-background-clip: text;
 	color:red; /* fallback while background is loading or if it never loads background-color can work here too */
 	font-weight:900;
-	font-size:6vw;
+	font-size:5vw;
 	line-height:10vw;
 	text-align:center;
 	/* outline:1px dotted red; */
@@ -106,7 +106,7 @@ section {height: 100vh;}
 .text-masks [class*='col-']:nth-of-type(1) .text-mask {background-image:url('../video/ocean.webp');}
 .text-masks [class*='col-']:nth-of-type(2) .text-mask {background-image:url('../video/rainbow.webp'); outline:10px dotted orange;}
 .text-masks [class*='col-']:nth-of-type(3) .text-mask {background-image:url('https://media0.giphy.com/media/hugQmENCWTyPM3yG5D/200w.webp');}
-.text-masks [class*='col-']:nth-of-type(4) .text-mask {background-image:url('https://i.pinimg.com/originals/b4/e3/71/b4e371619042d1e80918d09904e90f7d.gif');}
+.text-masks [class*='col-']:nth-of-type(4) .text-mask {background-image:url('../img/matrix.gif');}
 .text-masks [class*='col-']:nth-of-type(5) .text-mask {background-image:url('https://media4.giphy.com/media/l41K3o5TzvmhZwd4A/giphy.webp');}
 .text-masks [class*='col-']:nth-of-type(6) .text-mask {background-image:url('https://media4.giphy.com/media/iWU4XWUNbsGZzqSNkP/giphy.webp');}
 .text-masks [class*='col-']:nth-of-type(7) .text-mask {background-image:url('https://media1.giphy.com/media/3JEkXU9mnvnb2/giphy.webp');}
@@ -135,7 +135,7 @@ https://media1.giphy.com/media/Qvp6Z2fidQR34IcwQ5/giphy.gif?cid=790b7611b1a6937f
 
 .text-mask-paragraph {
 	background-image:url('../video/rainbow.webp');
-	background-position:center 25%;
+	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	-webkit-text-fill-color: transparent;
@@ -147,16 +147,13 @@ https://media1.giphy.com/media/Qvp6Z2fidQR34IcwQ5/giphy.gif?cid=790b7611b1a6937f
 	/* text-align:center; */
 	/* outline:1px dotted red; */
 }
+.text-mask-paragraph.rick-roll {background-image: url('https://media3.giphy.com/media/a6OnFHzHgCU1O/giphy.webp');}
+.text-mask-paragraph.nyan-cat {background-image:url('https://media1.giphy.com/media/sIIhZliB2McAo/giphy.webp');}
+
 .text-mask-paragraph h1 {
 	font-size:3vw;
 	font-weight:900;
 }
-
-
-
-
-
-
 
 
 
